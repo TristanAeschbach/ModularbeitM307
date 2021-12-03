@@ -1,0 +1,245 @@
+/*Variables*/
+:root{
+    --primaryColor: #ffffff;
+    --secondaryColor: #dcdcdc;
+    --thirdColor: #808080;
+    --accentColor: #ff0000;
+    --textColor: #000000;
+    --font-family: sans-serif;
+    --borderRadius: 8px;
+    --PageTitle: 3em;
+    --U-D-Text: .8em;
+    --PostTitle: 2em;
+    --generalText: 1em;
+}
+/*General Stuff*/
+a {
+    color: var(--textColor);
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: var(--generalText);
+}
+body{
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+    font-family: var(--font-family);
+    font-size: var(--generalText);
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+h1{
+    font-size: var(--PageTitle);
+}
+/*Post Grid and Cosmetics*/
+.postContent{
+    background-color: var(--secondaryColor);
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1em;
+    border-radius: var(--borderRadius);
+    border: var(--accentColor) 2px solid;
+}
+.postHeader{
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+    background-color: var(--thirdColor);
+    font-size: var(--U-D-Text);
+    width: 100%;
+}
+.postUsername{
+    margin-left: 10px;
+    grid-row: 1;
+    grid-column: 1;
+}
+.postDate{
+    margin-right: 10px;
+    grid-row: 1;
+    grid-column: 2;
+    text-align: right;
+}
+.postTitle{
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: var(--PostTitle);
+}
+.postTuI{
+    width: 100%;
+}
+.postImage {
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 20em;
+    float: right;
+}
+#postImage{
+    max-width: 100%;
+}
+.postText{
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+}
+.postButtons{
+    display: grid;
+    grid-template-columns: 4em 5em;
+    grid-gap: 1em;
+    margin-left: 10px;
+    margin-bottom: 1em;
+}
+.postEdit{
+    grid-row: 1;
+    grid-column: 1;
+    background: var(--thirdColor);
+    color: var(--textColor);
+    border-radius: var(--borderRadius);
+    text-align: center;
+}
+.postDelete{
+    grid-row: 1;
+    grid-column: 2;
+    background: var(--thirdColor);
+    color: var(--textColor);
+    border-radius: var(--borderRadius);
+    text-align: center;
+}
+/*Form Grid and Cosmetics*/
+#newPostForm{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 2%;
+}
+.usernameInputLabel{
+    grid-row: 1;
+    grid-column: 1;
+    font-size: var(--PostTitle);
+}
+.usernameInput{
+    grid-row: 2;
+    grid-column: 1;
+    height: 2.5em;
+    border-radius: var(--borderRadius);
+}
+.titleInputLabel{
+    grid-row: 3;
+    grid-column: 1;
+    font-size: var(--PostTitle);
+}
+.titleInput{
+    grid-row: 4;
+    grid-column: 1;
+    height: 2.5em;
+    border-radius: var(--borderRadius);
+}
+.existingImageLabel{
+    grid-row: 5;
+    grid-column: 1;
+    font-size: var(--PostTitle);
+}
+.existingImage{
+    grid-row: 6;
+    grid-column: 1;
+    max-width: 100%;
+    max-height: 30em;
+}
+.fileInputLabel{
+    grid-row: 7;
+    grid-column: 1;
+    font-size: var(--PostTitle);
+}
+.fileInputClass{
+    grid-row: 8;
+    grid-column: 1;
+    height: 3em;
+    font-size: var(--generalText);
+    border: green 1px solid;
+    border-radius: var(--borderRadius);
+    align-items: center;
+}
+.fileInput{
+}
+.submitPost{
+    grid-row: 9;
+    grid-column: 1/span 2;
+    border-radius: var(--borderRadius);
+    font-size: var(--PostTitle);
+    margin-left: auto;
+    margin-right: auto;
+}
+.contentInputLabel {
+    grid-row: 1;
+    grid-column: 2;
+    font-size: var(--PostTitle);
+}
+.contentInput {
+    grid-row: 2/span 7;
+    grid-column: 2;
+    border-radius: var(--borderRadius);
+}
+/*Header*/
+.header{
+    height: 35px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 35px;
+}
+#left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#home{
+    height: 100%;
+}
+#Logo{
+    margin: 2.5% 10px;
+    height: 80%;
+}
+#newPost{
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#plus_sign{
+    height: 50%;
+}
+#NewImageText{
+    margin-left: 5px;
+    width: 4.5em;
+}
+#right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
+}
+#contact{
+    padding: 10px;
+}
+#impressum{
+    padding: 10px;
+}
+#home:hover,#newPost:hover,#contact:hover,#impressum:hover{
+    background: linear-gradient(var(--accentColor) -100%, var(--primaryColor) 90%);
+}
+@media only screen and (max-width: 500px){
+
+}
