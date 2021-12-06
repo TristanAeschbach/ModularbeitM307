@@ -1,0 +1,23 @@
+<div class='postContent'>
+                <div class='postHeader'>
+                <div class='postUsername'><p><!---->Saudi Arabian Grand Prix<!----></p></div>
+                <div class='postDate'><p><!---->Mon, 6.12.2021, 08:52:30<!----></p></div>
+                </div>
+                <div class='postTitle'><p><!---->Verstappen and Hamilton summoned to stewards after Saudi Arabian GP<!----></p></div>
+                <div class='postTuI'>
+                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-52-30-000000.jpg' alt='Image'></div>
+                <div class='postText'><p><!---->Max Verstappen and Lewis Hamilton have been summoned to the stewards after the Saudi Arabian Grand Prix for an alleged breach of the FIA International Sporting Code.
+
+Verstappen finished second to Hamilton in Saudi Arabia having previously received a five-second penalty for leaving the track and gaining an advantage at Turn 1. But the Red Bull driver received a further summons at 2340 local time for allegedly breaching Article 2, Chapter IV, Appendix L of the FIA Sporting Code.
+
+The incident in question took place at Turn 27 at 2219 local time, while Hamilton, who won the race to level the championship, was also summoned.
+
+The article's chapter reads: &quot;Causing a collision, repetition of serious mistakes or the appearance of a lack of control over the control (such as leaving the track) will be reported to the Stewards and may entail the imposition of penalties up to and including the disqualification of any driver concerned.
+
+&quot;It is not permitted to drive any car unnecessarily slowly, erratically or in a manner deemed potentially dangerous to other drivers at any time.&quot;<!----></p></div>
+                </div>
+                <div class='postButtons'>
+                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-52-30-000000.txt&editImage=imgs/2021-12-06_08-52-30-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-52-30-000000.txt&deleteImage=imgs/2021-12-06_08-52-30-000000.jpg'><div class='postDelete'>Delete</div></a>
+                </div>
+                </div>

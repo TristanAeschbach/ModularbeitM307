@@ -30,8 +30,9 @@
             </div>
         </div>
         <div id="body" class="body">
-            <h1>Formula one and stuff like that</h1>
-            <p>Latest News: </p>
+            <h1>Formula one</h1>
+            <p></p>
+            <h2>Latest News: </h2>
             <?php
             require "fileManager.php";
             for($i=0;$i<folderSize("posts");$i++){

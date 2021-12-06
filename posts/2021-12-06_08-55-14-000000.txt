@@ -1,0 +1,17 @@
+<div class='postContent'>
+                <div class='postHeader'>
+                <div class='postUsername'><p><!---->Lewis Hamilton<!----></p></div>
+                <div class='postDate'><p><!---->Mon, 6.12.2021, 08:55:14<!----></p></div>
+                </div>
+                <div class='postTitle'><p><!---->Title rival Verstappen ‘over the limit for sure’ in Saudi Arabian GP<!----></p></div>
+                <div class='postTuI'>
+                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-55-14-000000.jpg' alt='Image'></div>
+                <div class='postText'><p><!---->“I've raced a lot of drivers through my life in the 28 years,” said Hamilton, whose third straight victory puts him equal on points heading to the season finale in Abu Dhabi next week. “I've come across a lot of different characters and there's a few at the top which are over the limit. Rules kind of don't apply, or they don't think of the rules.
+“[Max] is over the limit for sure,” he added. “I've avoided collisions on so many occasions with the guy, and I don’t always mind being the one that does that, because you live to fight another day, which I obviously did.
+“Then he obviously brake-tested [me], I think to try and get the DRS into the last corner to overtake me again back into Turn 1, so there was a commotion. I thought that I'd lost my wing.”<!----></p></div>
+                </div>
+                <div class='postButtons'>
+                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-55-14-000000.txt&editImage=imgs/2021-12-06_08-55-14-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-55-14-000000.txt&deleteImage=imgs/2021-12-06_08-55-14-000000.jpg'><div class='postDelete'>Delete</div></a>
+                </div>
+                </div>

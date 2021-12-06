@@ -1,0 +1,19 @@
+<div class='postContent'>
+                <div class='postHeader'>
+                <div class='postUsername'><p><!---->Max Verstappen<!----></p></div>
+                <div class='postDate'><p><!---->Mon, 6.12.2021, 08:56:15<!----></p></div>
+                </div>
+                <div class='postTitle'><p><!---->Verstappen gives his view on controversial Hamilton incidents<!----></p></div>
+                <div class='postTuI'>
+                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-56-15-000000.jpg' alt='Image'></div>
+                <div class='postText'><p><!---->“When they told me that I had the five-second penalty, it was not worth fighting anymore because I would never pull a gap of five seconds,” said the championship leader. “So yes, a lot of action, a lot of things that happened. I think ultimately, we didn’t really have perfect pace in the race, maybe also the medium tyres were not amazing to the end. I think the hard tyres [of Hamilton] had a bit more life in them I think, but as always, it’s easy to say afterwards.
+
+“At the end, that five-second penalty I don’t think is correct but at the end of the day I don’t want to talk about it that much because they don’t deserve any words coming out of my mouth.
+
+“I find it interesting that I am the one who gets a penalty when both of us ran out of the white lines,” he added. “In Brazil it was fine but suddenly I get a penalty for it; you could see both of us didn’t make the corner. But it’s fine, I also don’t really spend too much time on it. We have to move forward.”<!----></p></div>
+                </div>
+                <div class='postButtons'>
+                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-56-15-000000.txt&editImage=imgs/2021-12-06_08-56-15-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-56-15-000000.txt&deleteImage=imgs/2021-12-06_08-56-15-000000.jpg'><div class='postDelete'>Delete</div></a>
+                </div>
+                </div>

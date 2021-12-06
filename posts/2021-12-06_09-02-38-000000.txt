@@ -1,0 +1,21 @@
+<div class='postContent'>
+                <div class='postHeader'>
+                <div class='postUsername'><p><!---->Saudi Arabian Grand Prix<!----></p></div>
+                <div class='postDate'><p><!---->Mon, 6.12.2021, 09:02:38<!----></p></div>
+                </div>
+                <div class='postTitle'><p><!---->Verstappen handed further 10-second penalty for Lap 37 collision with Hamilton<!----></p></div>
+                <div class='postTuI'>
+                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_09-02-38-000000.jpg' alt='Image'></div>
+                <div class='postText'><p><!---->Max Verstappen has been handed a 10-second penalty for causing a Turn 27 collision with Lewis Hamilton in the Saudi Arabian Grand Prix, plus two penalty points.
+
+The title protagonists were embroiled in a bizarre incident on Lap 37 of the Saudi Arabian Grand Prix when Verstappen, who was asked to return the lead to Hamilton having been deemed to gain an advantage going off track earlier at Turn 1, slowed to let his rival past.
+
+Hamilton, however, was caught off-guard by the slowing Red Bull and attempted to jink left in avoidance, clipping the car ahead and damaging his front wing. Verstappen received a five-second penalty for the earlier Turn 1 incident, with both drivers summoned to the stewards for this Turn 27 scrap.
+
+The stewards saw fit to hand Verstappen a further 10-second penalty and two penalty points (taking him to a total of seven over the 12-month period) with their report reading: &quot;At Turn 21 the driver of car 33 [Verstappen] was given the instruction to give back a position to car 44 [Hamilton] and was told by the team to do so 'strategically'. Car 33 slowed significantly at Turn 26.<!----></p></div>
+                </div>
+                <div class='postButtons'>
+                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_09-02-38-000000.txt&editImage=imgs/2021-12-06_09-02-38-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_09-02-38-000000.txt&deleteImage=imgs/2021-12-06_09-02-38-000000.jpg'><div class='postDelete'>Delete</div></a>
+                </div>
+                </div>

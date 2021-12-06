@@ -1,0 +1,41 @@
+<div class='postContent'>
+                <div class='postHeader'>
+                <div class='postUsername'><p><!---->Sean Kelly<!----></p></div>
+                <div class='postDate'><p><!---->Mon, 6.12.2021, 08:58:35<!----></p></div>
+                </div>
+                <div class='postTitle'><p><!---->Saudi Arabian GP Facts &amp; Stats: Title rivals tied ahead of final round<!----></p></div>
+                <div class='postTuI'>
+                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-58-35-000000.jpg' alt='Image'></div>
+                <div class='postText'><p><!---->Everyone suspected the world’s fastest street track would throw up a thrilling race, and the Jeddah Corniche Circuit certainly did that. It also delivered some fascinating figures and notable numbers – here’s a quick roundup…
+
+• This season is only the second time in F1 history that the drivers’ championship has been tied going into the final race: in 1974 Emerson Fittipaldi won the title over Clay Regazzoni at the last Grand Prix.
+
+• Today Hamilton won on the 31st different circuit of his F1 career.
+
+• He also won a third race in a row for the first time in 2021.
+
+• Hamilton has never won a championship when not leading it this late in the season.
+
+• Verstappen has tied the single-season record of 17 podium finishes.
+• In the sister Mercedes, Valtteri Bottas finished on the podium in his 100th start for the Silver Arrows, after passing Alpine’s Esteban Ocon for P3 on the final straight of the final lap.
+
+• It is the second time Bottas has won a drag race to the line to take a podium – he also did it to Lance Stroll at Azerbaijan 2017.
+
+• Ocon has finished in the top five at the last two races running, having had only one top-five finish in rest of the season.
+
+• McLaren’s Daniel Ricciardo took P5 for his first points in four races.
+
+• Ricciardo's last four points finishes have all been top-five results.
+• AlphaTauri’s Pierre Gasly came home in P6 for his eighth top-six finish of the year.
+
+• With Charles Leclerc in P7 and Carlos Sainz in P8, for the fourth race in a row the two Ferraris finished one behind the other.
+
+• P9 for Alfa Romeo was Antonio Giovinazzi’s best result of 2021 in his penultimate race for the team, and only his second points finish of the season.
+
+• McLaren’s Lando Norris took P10, meaning his last four results have been: 10th, 10th, ninth, 10th.<!----></p></div>
+                </div>
+                <div class='postButtons'>
+                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-58-35-000000.txt&editImage=imgs/2021-12-06_08-58-35-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-58-35-000000.txt&deleteImage=imgs/2021-12-06_08-58-35-000000.jpg'><div class='postDelete'>Delete</div></a>
+                </div>
+                </div>

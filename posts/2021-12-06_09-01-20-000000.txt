@@ -1,0 +1,23 @@
+<div class='postContent'>
+                <div class='postHeader'>
+                <div class='postUsername'><p><!---->Esteban Ocon<!----></p></div>
+                <div class='postDate'><p><!---->Mon, 6.12.2021, 09:01:20<!----></p></div>
+                </div>
+                <div class='postTitle'><p><!---->Ocon distraught after Bottas denies him Saudi podium<!----></p></div>
+                <div class='postTuI'>
+                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_09-01-20-000000.jpg' alt='Image'></div>
+                <div class='postText'><p><!---->“It’s difficult feelings right now, we gave it all in that race,” he said. “It’s a frustrating end as we had that third place for the whole race. The team did an amazing job, the car was spot on but we’re fighting in a different league to Mercedes and to lose that third place 10 seconds from the line is very frustrating. But it’s the plan, as Fernando would call it. We’re getting there. We are getting where we want, we extract the maximum out of the car. Once we are going to have that pace that the others have, we are going to be dangerous. That’s what we’re working towards.&quot;
+
+“I’m extremely proud of all the decisions we took, everything was mega, spot on, but it’s a difficult end.”
+
+The last time Ocon managed a chaotic race and seized his opportunities was in Hungary – where he held off intense pressure from Sebastian Vettel to clinch a maiden victory. Did he think that lightening might strike twice?
+
+“I was going to take any opportunity I could for sure,” he said. “There was a lot of contact in that race. But the first two starts, I gained four places. But I was not fighting against Lewis and Max. I knew that. I let them go and they did their own race. The aim was to keep third place, and we did so until far into the race. Next time.”
+
+Ocon’s fourth was his second successive top-five finish and moved him to within five points of Alpine team mate Fernando Alonso with just one race to go.<!----></p></div>
+                </div>
+                <div class='postButtons'>
+                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_09-01-20-000000.txt&editImage=imgs/2021-12-06_09-01-20-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_09-01-20-000000.txt&deleteImage=imgs/2021-12-06_09-01-20-000000.jpg'><div class='postDelete'>Delete</div></a>
+                </div>
+                </div>

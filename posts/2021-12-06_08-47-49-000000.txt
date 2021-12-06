@@ -1,0 +1,21 @@
+<div class='postContent'>
+                <div class='postHeader'>
+                <div class='postUsername'><p><!---->Formula 2<!----></p></div>
+                <div class='postDate'><p><!---->Mon, 6.12.2021, 08:47:49<!----></p></div>
+                </div>
+                <div class='postTitle'><p><!---->F2: Piastri wins shortened Saudi Arabian Feature Race as PREMA get championship<!----></p></div>
+                <div class='postTuI'>
+                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-47-49-000000.jpg' alt='Image'></div>
+                <div class='postText'><p><!---->Alpine junior Oscar Piastri won a shortened Formula 2 feature race in Jeddah, ahead of teammate Robert Shwartzman and Campos Racing’s Ralph Boschung. The race was red flagged and not restarted following two crashes and a lengthy pre-race delay, with only five laps completed and half points awarded.
+
+Track repairs initially postponed the race, but when it did eventually get under way, there was a nasty collision between Theo Pourchaire and Enzo Fittipaldi that brought out a red flag. The Frenchman appeared to stall when the lights went out and the Brazilian was unable to avoid him, running into the back of the stationary ART Grand Prix.
+
+Pourchaire and Fittipaldi were transferred to hospital and confirmed as conscious by an FIA statement.
+
+The pair’s crash led to a lengthy red flag, after which the race was shortened to 20 minutes and one lap, with one mandatory pitstop and half points.<!----></p></div>
+                </div>
+                <div class='postButtons'>
+                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-47-49-000000.txt&editImage=imgs/2021-12-06_08-47-49-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-47-49-000000.txt&deleteImage=imgs/2021-12-06_08-47-49-000000.jpg'><div class='postDelete'>Delete</div></a>
+                </div>
+                </div>

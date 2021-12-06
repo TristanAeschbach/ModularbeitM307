@@ -1,0 +1,20 @@
+<div class='postContent'>
+                <div class='postHeader'>
+                <div class='postUsername'><p><!---->Chris Medland<!----></p></div>
+                <div class='postDate'><p><!---->Mon, 6.12.2021, 08:38:26<!----></p></div>
+                </div>
+                <div class='postTitle'><p><!---->STRATEGY GUIDE<!----></p></div>
+                <div class='postTuI'>
+                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-38-26-000000.jpg' alt='Image'></div>
+                <div class='postText'><p><!---->What are the likely strategies for the frontrunners?
+It's a pretty simple equation for most of the cars at the front, with the medium compound the starting tyre and a one-stop strategy the aim.
+
+By starting on the medium tyre, the teams have opened up more flexibility for their first stint, with an ideal pit window of between Lap 21 and 26 before switching to the hard tyre and going to the end of the race. The flexibility comes as a result of the hard being predicted to be able to do more than that distance, so if there is an incident that necessitates a stop after Lap 15, we could well see the hards put on at that early stage. And an incident could well be likely on the street circuit, where the chances of a Safety Car are higher. We have no historical data for an F1 race in Jeddah, but Saturday’s two F2 races both required Safety Car interventions.
+
+While an early Safety Car might make the hard stint a longer one, the frontrunners all have a second set of mediums tyres (or a set of softs) available to use at the end of the race if there's a late interruption that offers a free pit stop.<!----></p></div>
+                </div>
+                <div class='postButtons'>
+                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-38-26-000000.txt&editImage=imgs/2021-12-06_08-38-26-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-38-26-000000.txt&deleteImage=imgs/2021-12-06_08-38-26-000000.jpg'><div class='postDelete'>Delete</div></a>
+                </div>
+                </div>

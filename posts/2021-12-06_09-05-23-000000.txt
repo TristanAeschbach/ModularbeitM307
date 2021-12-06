@@ -1,0 +1,16 @@
+<div class='postContent'>
+                <div class='postHeader'>
+                <div class='postUsername'><p><!---->Becky Hart<!----></p></div>
+                <div class='postDate'><p><!---->Mon, 6.12.2021, 09:05:23<!----></p></div>
+                </div>
+                <div class='postTitle'><p><!---->What the teams said - Race day in Saudi Arabia<!----></p></div>
+                <div class='postTuI'>
+                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_09-05-23-000000.jpg' alt='Image'></div>
+                <div class='postText'><p><!---->Mercedes: Having led from the start, the early stages seemed to be all serene progress for Mercedes. But pitting both cars under the first Safety Car lost them track position, with the resultant red flag favouring Verstappen. Starting second and third, Bottas locked up at the restart, and that dropped him out of contention, although he never gave up and fought his way back to the podium. As for Hamilton, he got into the lead at the first restart but lost out to an off-track Verstappen, and Race Control subsequently gave him the place back for the second restart. He didn’t get away as cleanly, dropped behind his rival and then set about chasing him down. That he managed to do, via another off-track moment and a collision between the pair, which included front wing damage for the Mercedes to boot. But all those incidents add up to one thing – Hamilton is now tied in the championship with his rival. Red Bull:
+Running third in the early stages, Verstappen jumped both Mercedes cars in the first red flag period courtesy of a free tyre change. He ran wide across Turn 1 at the first restart, emerging in the lead but being deemed to have gained an advantage, so gave the place back for the next restart. That one he nailed, barging his way into the lead which he held for much of the race. But under pressure from behind, he ran wide again and was ordered to give the place back to a chasing Hamilton. This he did – albeit briefly – and only after a collision between the two. He did then finally cede the position, whilst being awarded a time penalty for gaining an advantage off track.<!----></p></div>
+                </div>
+                <div class='postButtons'>
+                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_09-05-23-000000.txt&editImage=imgs/2021-12-06_09-05-23-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_09-05-23-000000.txt&deleteImage=imgs/2021-12-06_09-05-23-000000.jpg'><div class='postDelete'>Delete</div></a>
+                </div>
+                </div>
