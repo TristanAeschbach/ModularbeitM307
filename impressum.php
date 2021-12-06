@@ -12,7 +12,7 @@
         <div id="header" class="header">
             <div id="left">
                 <a id="home" href="index.php"><img id="Logo" src="imgs/Logo.png" alt="F1"></a>
-                <a id="newPost" href="newPost.php"><svg version="1.1" id="plus_sign" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                <a id="newPost" href="newPost.php"><svg id="plus_sign" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                                         viewBox="0 0 459.325 459.325"
                                                         xml:space="preserve">
                                                         <g>

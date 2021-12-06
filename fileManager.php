@@ -7,7 +7,7 @@ function text($username,$date,$title,$content,$imagename,$filename){
                 </div>
                 <div class='postTitle'><p><!---->$title<!----></p></div>
                 <div class='postTuI'>
-                <div class='postImage'><img id='postImage' src='$imagename'></div>
+                <div class='postImage'><img id='postImage' src='$imagename' alt='Image'></div>
                 <div class='postText'><p><!---->$content<!----></p></div>
                 </div>
                 <div class='postButtons'>
@@ -181,7 +181,7 @@ function createEditedPostNewImage($usernameSource, $titleSource, $contentSource,
 function getPost($filename){
     // opens the specified File in read mode
     $readFile = fopen('posts/'.$filename, "r");
-    $text = fread($readFile,filesize('posts/'.$filename));;
+    $text = fread($readFile,filesize('posts/'.$filename));
     // closes the file after reading it
     fclose($readFile);
     // returns the content of the full File
@@ -217,7 +217,7 @@ function filePosition($dir, $num){
     return $files[$num];
 }
 //Function to redirect to a specified page
-function redirect($url, $statusCode = 303)
+function redirect($url)
 {
     //sets the URL with the page name
     echo "<meta http-equiv='refresh' content='0;url=$url'>";
