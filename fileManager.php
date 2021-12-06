@@ -48,6 +48,8 @@ function createPost($usernameSource, $titleSource, $contentSource, $tmp_name, $i
     && getimagesize($tmp_name) != false
     // checks if the image file arleady exists
     && file_exists($imagename) == false
+
+    && file_exists($dateFileName) == false
     // checks if the image smaller than 500kb
     && $imgSize < 500000){
     // only if all of this is correct, the image and file get created
@@ -61,7 +63,7 @@ function createPost($usernameSource, $titleSource, $contentSource, $tmp_name, $i
         }
         // Check if $uploadOk is set to 0 by an error
         if ($uploadOk == 0) {
-            echo "</br>Sorry, your file was not uploaded.";
+            echo "</br>Sorry, your image was not uploaded.";
             // if everything is ok, try to upload image
         } else {
             move_uploaded_file($tmp_name, $imagename);
@@ -82,22 +84,24 @@ function createPost($usernameSource, $titleSource, $contentSource, $tmp_name, $i
         //redirects to index.php automatically
         redirect("index.php");
     }
-    else {echo "<h6>Sorry, something went wrong. Pleasy Try again</h6>";}
+    else {echo "<h6>Sorry, something went wrong. Please Try again</h6>";}
 }
 
 function createEditedPostSameImage($usernameSource, $titleSource, $contentSource, $filename, $imagename, $date){
     //checks if Username exists, isn't empty and is less than 50 characters long
     if (isset($usernameSource)
-        && !empty(trim($usernameSource))
-        && strlen(trim($usernameSource)) < 51
-        //checks if title exists, isn't empty and is less than 80 characters long
-        && isset($titleSource)
-        && !empty(trim($titleSource))
-        && strlen(trim($titleSource)) < 81
-        //checks if Content exists, isn't empty and is less than 2000 characters long
-        && isset($contentSource)
-        && !empty(trim($contentSource))
-        && strlen(trim($contentSource)) < 2001){
+    && !empty(trim($usernameSource))
+    && strlen(trim($usernameSource)) < 51
+    //checks if title exists, isn't empty and is less than 80 characters long
+    && isset($titleSource)
+    && !empty(trim($titleSource))
+    && strlen(trim($titleSource)) < 81
+    //checks if Content exists, isn't empty and is less than 2000 characters long
+    && isset($contentSource)
+    && !empty(trim($contentSource))
+    && strlen(trim($contentSource)) < 2001
+    && file_exists($filename)
+    && file_exists($imagename)){
         // only if all of this is correct, the image and file get created
         //username entschärfen
         $username = htmlspecialchars(trim($usernameSource));
@@ -114,7 +118,7 @@ function createEditedPostSameImage($usernameSource, $titleSource, $contentSource
         //redirects to index.php automatically
         redirect("index.php");
     }
-    else {echo "<h6>Sorry, something went wrong. Pleasy Try again</h6>";}
+    else {echo "<h6>Sorry, something went wrong. Please Try again</h6>";}
 }
 function createEditedPostNewImage($usernameSource, $titleSource, $contentSource, $tmp_name, $imgName, $imgSize, $filename, $imagename, $date){
     //variable for old image name
@@ -123,22 +127,23 @@ function createEditedPostNewImage($usernameSource, $titleSource, $contentSource,
     $imageFileType = strtolower(pathinfo($target_file_name, PATHINFO_EXTENSION));
     //checks if Username exists, isn't empty and is less than 50 characters long
     if (isset($usernameSource)
-        && !empty(trim($usernameSource))
-        && strlen(trim($usernameSource)) < 51
-        //checks if title exists, isn't empty and is less than 80 characters long
-        && isset($titleSource)
-        && !empty(trim($titleSource))
-        && strlen(trim($titleSource)) < 81
-        //checks if Content exists, isn't empty and is less than 2000 characters long
-        && isset($contentSource)
-        && !empty(trim($contentSource))
-        && strlen(trim($contentSource)) < 2001
-        // checks if image exists
-        && isset($imgName)
-        // checks if image is an actual Image
-        && getimagesize($tmp_name) != false
-        // checks if the image smaller than 500kb
-        && $imgSize < 500000){
+    && !empty(trim($usernameSource))
+    && strlen(trim($usernameSource)) < 51
+    //checks if title exists, isn't empty and is less than 80 characters long
+    && isset($titleSource)
+    && !empty(trim($titleSource))
+    && strlen(trim($titleSource)) < 81
+    //checks if Content exists, isn't empty and is less than 2000 characters long
+    && isset($contentSource)
+    && !empty(trim($contentSource))
+    && strlen(trim($contentSource)) < 2001
+    // checks if image exists
+    && isset($imgName)
+    // checks if image is an actual Image
+    && getimagesize($tmp_name) != false
+    // checks if the image smaller than 500kb
+    && $imgSize < 500000
+    && file_exists($filename)){
         // only if all of this is correct, the image and file get created
         //Variable uploadOK shouldn't change, unless there is a problem.
         $uploadOk = 1;
@@ -150,7 +155,7 @@ function createEditedPostNewImage($usernameSource, $titleSource, $contentSource,
         }
         // Check if $uploadOk is set to 0 by an error
         if ($uploadOk == 0) {
-            echo "</br>Sorry, your file was not uploaded.";
+            echo "</br>Sorry, your image was not uploaded.";
             // if everything is ok, try to upload image
         } else {
             unlink($imagename);
@@ -170,7 +175,7 @@ function createEditedPostNewImage($usernameSource, $titleSource, $contentSource,
         //redirects to index.php automatically
         redirect("index.php");
     }
-    else {echo "<h6>Sorry, something went wrong. Pleasy Try again</h6>";}
+    else {echo "<h6>Sorry, something went wrong. Please Try again</h6>";}
 }
 //Function to retrieve a textfiles content
 function getPost($filename){
