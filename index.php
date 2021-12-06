@@ -26,7 +26,6 @@
                                                 <div id="NewPostText">New Post</div></a>
             </div>
             <div id="right">
-                <a id="contact" href="contact.php">Contact</a>
                 <a id="impressum" href="impressum.php">Impressum</a>
             </div>
         </div>

@@ -26,12 +26,19 @@
                     <div id="NewPostText">New Post</div></a>
             </div>
             <div id="right">
-                <a id="contact" href="contact.php">Contact</a>
                 <a id="impressum" href="impressum.php">Impressum</a>
             </div>
         </div>
         <div id="body" class="body">
             <h1>Impressum</h1>
+
+            <p>Tristan Aeschbach<br />
+                Laufengasse 133<br />
+                5080 Laufenburg</p>
+
+            <h2>Kontakt</h2>
+            <p>Telefon: 079 855 63 31<br />
+                E-Mail: tristan.aeschbach@stud.edubs.ch</p>
         </div>
         <div id="footer" class="footer">
         </div>
