@@ -39,6 +39,8 @@
             <h2>Contact</h2>
             <p>Telefon: 079 855 63 31<br />
                 E-Mail: tristan.aeschbach@stud.edubs.ch</p>
+            <h2>Copyright</h2>
+            <p>All Content stolen from <a href="https://www.formula1.com/">formula1.com</a></p>
         </div>
         <div id="footer" class="footer">
         </div>
