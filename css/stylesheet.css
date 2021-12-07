@@ -72,13 +72,13 @@ h1{
 .postTuI{
     width: 100%;
 }
-.postImage {
+.postImageClass {
     margin-top: 15px;
     margin-right: 10px;
     width: 20em;
     float: right;
 }
-#postImage{
+.postImage{
     max-width: 100%;
 }
 .postText{

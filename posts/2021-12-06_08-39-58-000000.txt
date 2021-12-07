@@ -5,7 +5,7 @@
                 </div>
                 <div class='postTitle'><p><!---->AS IT HAPPENED: Get all the reaction from a dramatic Saudi Arabian Grand Prix<!----></p></div>
                 <div class='postTuI'>
-                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-39-58-000000.jpg' alt='Image'></div>
+                <div class='postImageClass'><img class='postImage' src='imgs/2021-12-06_08-39-58-000000.jpg' alt='Image'></div>
                 <div class='postText'><p><!---->OVERVIEW:
 Round 21 of 22 comes from Jeddah, Saudi Arabia.
 Lewis Hamilton wins an unbelievably dramatic race.
@@ -14,7 +14,7 @@ Two red flag periods, Safety Cars and VSC laps all add to the drama.
 Hamilton and Max Verstappen are tied on points heading into Abu Dhabi.<!----></p></div>
                 </div>
                 <div class='postButtons'>
-                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-39-58-000000.txt&editImage=imgs/2021-12-06_08-39-58-000000.jpg'><div class='postEdit'>Edit</div></a>
-                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-39-58-000000.txt&deleteImage=imgs/2021-12-06_08-39-58-000000.jpg'><div class='postDelete'>Delete</div></a>
+                <a class='editPost' href='editPost.php?editPost=posts/2021-12-06_08-39-58-000000.txt&editImage=imgs/2021-12-06_08-39-58-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a class='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-39-58-000000.txt&deleteImage=imgs/2021-12-06_08-39-58-000000.jpg'><div class='postDelete'>Delete</div></a>
                 </div>
                 </div>

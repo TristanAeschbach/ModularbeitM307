@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +36,7 @@
                 Laufengasse 133<br />
                 5080 Laufenburg</p>
 
-            <h2>Kontakt</h2>
+            <h2>Contact</h2>
             <p>Telefon: 079 855 63 31<br />
                 E-Mail: tristan.aeschbach@stud.edubs.ch</p>
         </div>

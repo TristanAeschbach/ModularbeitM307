@@ -5,7 +5,7 @@
                 </div>
                 <div class='postTitle'><p><!---->F2 racers Pourchaire and Fittipaldi transferred to hospital after Jeddah crash<!----></p></div>
                 <div class='postTuI'>
-                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-41-01-000000.jpg' alt='Image'></div>
+                <div class='postImageClass'><img class='postImage' src='imgs/2021-12-06_08-41-01-000000.jpg' alt='Image'></div>
                 <div class='postText'><p><!---->The FIA has confirmed that Formula 2 racers Theo Pourchaire and Enzo Fittpaldi have been taken to hospital following a crash at the start of the Feature Race on Sunday in Saudi Arabia.
 
 Pourchaire and Fittipaldi came together as the lights went out for Race 3 at Jeddah, Pourchaire appearing to stall from third on the grid, with his stationary car then hit by Fittipaldi. The pair’s crash led to a lengthy red flag, after which the race was shortened to 20 minutes and one lap.
@@ -17,7 +17,7 @@ An FIA statement read: &quot;The FIA advises that an incident occurred during th
 &quot;The drivers were immediately attended to by emergency and medical crews. The drivers were conscious and extricated by the attending medical crews. Both have been transferred by ambulance and helicopter to King Fahad Armed Forces Hospital, Jeddah.&quot;<!----></p></div>
                 </div>
                 <div class='postButtons'>
-                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-41-01-000000.txt&editImage=imgs/2021-12-06_08-41-01-000000.jpg'><div class='postEdit'>Edit</div></a>
-                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-41-01-000000.txt&deleteImage=imgs/2021-12-06_08-41-01-000000.jpg'><div class='postDelete'>Delete</div></a>
+                <a class='editPost' href='editPost.php?editPost=posts/2021-12-06_08-41-01-000000.txt&editImage=imgs/2021-12-06_08-41-01-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a class='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-41-01-000000.txt&deleteImage=imgs/2021-12-06_08-41-01-000000.jpg'><div class='postDelete'>Delete</div></a>
                 </div>
                 </div>

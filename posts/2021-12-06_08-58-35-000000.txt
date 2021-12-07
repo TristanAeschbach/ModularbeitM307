@@ -5,7 +5,7 @@
                 </div>
                 <div class='postTitle'><p><!---->Saudi Arabian GP Facts &amp; Stats: Title rivals tied ahead of final round<!----></p></div>
                 <div class='postTuI'>
-                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-58-35-000000.jpg' alt='Image'></div>
+                <div class='postImageClass'><img class='postImage' src='imgs/2021-12-06_08-58-35-000000.jpg' alt='Image'></div>
                 <div class='postText'><p><!---->Everyone suspected the world’s fastest street track would throw up a thrilling race, and the Jeddah Corniche Circuit certainly did that. It also delivered some fascinating figures and notable numbers – here’s a quick roundup…
 
 • This season is only the second time in F1 history that the drivers’ championship has been tied going into the final race: in 1974 Emerson Fittipaldi won the title over Clay Regazzoni at the last Grand Prix.
@@ -35,7 +35,7 @@
 • McLaren’s Lando Norris took P10, meaning his last four results have been: 10th, 10th, ninth, 10th.<!----></p></div>
                 </div>
                 <div class='postButtons'>
-                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-58-35-000000.txt&editImage=imgs/2021-12-06_08-58-35-000000.jpg'><div class='postEdit'>Edit</div></a>
-                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-58-35-000000.txt&deleteImage=imgs/2021-12-06_08-58-35-000000.jpg'><div class='postDelete'>Delete</div></a>
+                <a class='editPost' href='editPost.php?editPost=posts/2021-12-06_08-58-35-000000.txt&editImage=imgs/2021-12-06_08-58-35-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a class='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-58-35-000000.txt&deleteImage=imgs/2021-12-06_08-58-35-000000.jpg'><div class='postDelete'>Delete</div></a>
                 </div>
                 </div>

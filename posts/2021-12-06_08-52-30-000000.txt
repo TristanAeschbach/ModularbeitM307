@@ -5,7 +5,7 @@
                 </div>
                 <div class='postTitle'><p><!---->Verstappen and Hamilton summoned to stewards after Saudi Arabian GP<!----></p></div>
                 <div class='postTuI'>
-                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-52-30-000000.jpg' alt='Image'></div>
+                <div class='postImageClass'><img class='postImage' src='imgs/2021-12-06_08-52-30-000000.jpg' alt='Image'></div>
                 <div class='postText'><p><!---->Max Verstappen and Lewis Hamilton have been summoned to the stewards after the Saudi Arabian Grand Prix for an alleged breach of the FIA International Sporting Code.
 
 Verstappen finished second to Hamilton in Saudi Arabia having previously received a five-second penalty for leaving the track and gaining an advantage at Turn 1. But the Red Bull driver received a further summons at 2340 local time for allegedly breaching Article 2, Chapter IV, Appendix L of the FIA Sporting Code.
@@ -17,7 +17,7 @@ The article's chapter reads: &quot;Causing a collision, repetition of serious mi
 &quot;It is not permitted to drive any car unnecessarily slowly, erratically or in a manner deemed potentially dangerous to other drivers at any time.&quot;<!----></p></div>
                 </div>
                 <div class='postButtons'>
-                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-52-30-000000.txt&editImage=imgs/2021-12-06_08-52-30-000000.jpg'><div class='postEdit'>Edit</div></a>
-                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-52-30-000000.txt&deleteImage=imgs/2021-12-06_08-52-30-000000.jpg'><div class='postDelete'>Delete</div></a>
+                <a class='editPost' href='editPost.php?editPost=posts/2021-12-06_08-52-30-000000.txt&editImage=imgs/2021-12-06_08-52-30-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a class='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-52-30-000000.txt&deleteImage=imgs/2021-12-06_08-52-30-000000.jpg'><div class='postDelete'>Delete</div></a>
                 </div>
                 </div>

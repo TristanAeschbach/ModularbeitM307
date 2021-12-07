@@ -7,19 +7,19 @@ function text($username,$date,$title,$content,$imagename,$filename){
                 </div>
                 <div class='postTitle'><p><!---->$title<!----></p></div>
                 <div class='postTuI'>
-                <div class='postImage'><img id='postImage' src='$imagename' alt='Image'></div>
+                <div class='postImageClass'><img class='postImage' src='$imagename' alt='Image'></div>
                 <div class='postText'><p><!---->$content<!----></p></div>
                 </div>
                 <div class='postButtons'>
-                <a id='editPost' href='editPost.php?editPost=$filename&editImage=$imagename'><div class='postEdit'>Edit</div></a>
-                <a id='deletePost' href='fileManager.php?deletePost=$filename&deleteImage=$imagename'><div class='postDelete'>Delete</div></a>
+                <a class='editPost' href='editPost.php?editPost=$filename&editImage=$imagename'><div class='postEdit'>Edit</div></a>
+                <a class='deletePost' href='fileManager.php?deletePost=$filename&deleteImage=$imagename'><div class='postDelete'>Delete</div></a>
                 </div>
                 </div>";
 }
 //Function for creating a Post
 function createPost($usernameSource, $titleSource, $contentSource, $tmp_name, $imgName, $imgSize){
     //date and time variable for File sorting
-    $dateFileName = date('Y-m-d_H-i-s-u', time());
+    $dateFileName = date('Y-m-d_H-i-s', time());
     //date variable for displaying in Post
     $date = date('D, j.n.Y, H:i:s', time());
     //variable for old image name

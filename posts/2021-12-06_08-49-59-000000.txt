@@ -5,7 +5,7 @@
                 </div>
                 <div class='postTitle'><p><!---->Hamilton beats Verstappen in controversy-filled first ever Saudi Arabian GP<!----></p></div>
                 <div class='postTuI'>
-                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-49-59-000000.jpg' alt='Image'></div>
+                <div class='postImageClass'><img class='postImage' src='imgs/2021-12-06_08-49-59-000000.jpg' alt='Image'></div>
                 <div class='postText'><p><!---->Lewis Hamilton won a controversial debut Saudi Arabian Grand Prix from pole position ahead of Max Verstappen and Valtteri Bottas amid two red-flag stoppages. The result means the two championship protagonists go to the Abu Dhabi finale level on points.
 
 Hamilton led Bottas and Verstappen – who shrugged off his qualifying crash – at the start but on Lap 10, Mick Schumacher spun and hit the Turn 23 barriers. The Safety Car soon turned into a red flag, crucially giving Verstappen a free stop in the pits, while the Mercedes had stopped under yellows.
@@ -17,7 +17,7 @@ A cacophony of bargaining calls by the Red Bull and Mercedes pitwalls followed b
 Three Virtual Safety Car periods followed from Lap 28 to Lap 36 after which Hamilton was in DRS range of Verstappen. The Mercedes driver attempted a move on Lap 36 on the main straight but the Dutchman braked too late for comfort, running wide at Turn 2 and retaining the lead. He was instructed to give P1 back and on Lap 37 the Red Bull driver slowed – only for Hamilton to get caught off guard and clip the rear of his rival, taking front-right wing damage.<!----></p></div>
                 </div>
                 <div class='postButtons'>
-                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-49-59-000000.txt&editImage=imgs/2021-12-06_08-49-59-000000.jpg'><div class='postEdit'>Edit</div></a>
-                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-49-59-000000.txt&deleteImage=imgs/2021-12-06_08-49-59-000000.jpg'><div class='postDelete'>Delete</div></a>
+                <a class='editPost' href='editPost.php?editPost=posts/2021-12-06_08-49-59-000000.txt&editImage=imgs/2021-12-06_08-49-59-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a class='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-49-59-000000.txt&deleteImage=imgs/2021-12-06_08-49-59-000000.jpg'><div class='postDelete'>Delete</div></a>
                 </div>
                 </div>

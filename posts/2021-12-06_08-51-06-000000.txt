@@ -3,9 +3,9 @@
                 <div class='postUsername'><p><!---->Saudi Arabian Grand Prix<!----></p></div>
                 <div class='postDate'><p><!---->Mon, 6.12.2021, 08:51:06<!----></p></div>
                 </div>
-                <div class='postTitle'><p><!---->DRIVER OF THE DAY: Verstappen's battling Jeddah drive gets your vote<!----></p></div>
+                <div class='postTitle'><p><!---->DRIVER OF THE DAY: Verstappen<!----></p></div>
                 <div class='postTuI'>
-                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-51-06-000000.jpg' alt='Image'></div>
+                <div class='postImageClass'><img class='postImage' src='imgs/2021-12-06_08-51-06-000000.jpg' alt='Image'></div>
                 <div class='postText'><p><!---->Two restarts, a Safety Car, numerous Virtual Safety Cars, a five-second time penalty and contact with his championship rival - eventful was not the word for Max Verstappen's Saudi Arabian Grand Prix. After all that the Red Bull man came home second, but topped your vote - here's how it broke down...
 
 Max Verstappen - 26.7%
@@ -15,7 +15,7 @@ Daniel Ricciardo - 6.6%
 Kimi Raikkonen - 4.1%<!----></p></div>
                 </div>
                 <div class='postButtons'>
-                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-51-06-000000.txt&editImage=imgs/2021-12-06_08-51-06-000000.jpg'><div class='postEdit'>Edit</div></a>
-                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-51-06-000000.txt&deleteImage=imgs/2021-12-06_08-51-06-000000.jpg'><div class='postDelete'>Delete</div></a>
+                <a class='editPost' href='editPost.php?editPost=posts/2021-12-06_08-51-06-000000.txt&editImage=imgs/2021-12-06_08-51-06-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a class='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-51-06-000000.txt&deleteImage=imgs/2021-12-06_08-51-06-000000.jpg'><div class='postDelete'>Delete</div></a>
                 </div>
                 </div>

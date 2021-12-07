@@ -5,7 +5,7 @@
                 </div>
                 <div class='postTitle'><p><!---->STRATEGY GUIDE<!----></p></div>
                 <div class='postTuI'>
-                <div class='postImage'><img id='postImage' src='imgs/2021-12-06_08-38-26-000000.jpg' alt='Image'></div>
+                <div class='postImageClass'><img class='postImage' src='imgs/2021-12-06_08-38-26-000000.jpg' alt='Image'></div>
                 <div class='postText'><p><!---->What are the likely strategies for the frontrunners?
 It's a pretty simple equation for most of the cars at the front, with the medium compound the starting tyre and a one-stop strategy the aim.
 
@@ -14,7 +14,7 @@ By starting on the medium tyre, the teams have opened up more flexibility for th
 While an early Safety Car might make the hard stint a longer one, the frontrunners all have a second set of mediums tyres (or a set of softs) available to use at the end of the race if there's a late interruption that offers a free pit stop.<!----></p></div>
                 </div>
                 <div class='postButtons'>
-                <a id='editPost' href='editPost.php?editPost=posts/2021-12-06_08-38-26-000000.txt&editImage=imgs/2021-12-06_08-38-26-000000.jpg'><div class='postEdit'>Edit</div></a>
-                <a id='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-38-26-000000.txt&deleteImage=imgs/2021-12-06_08-38-26-000000.jpg'><div class='postDelete'>Delete</div></a>
+                <a class='editPost' href='editPost.php?editPost=posts/2021-12-06_08-38-26-000000.txt&editImage=imgs/2021-12-06_08-38-26-000000.jpg'><div class='postEdit'>Edit</div></a>
+                <a class='deletePost' href='fileManager.php?deletePost=posts/2021-12-06_08-38-26-000000.txt&deleteImage=imgs/2021-12-06_08-38-26-000000.jpg'><div class='postDelete'>Delete</div></a>
                 </div>
                 </div>

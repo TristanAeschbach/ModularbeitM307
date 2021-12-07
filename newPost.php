@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +31,7 @@
         </div>
         <div id="body" class="body">
             <h1>New Post</h1>
-            <form method="post" action="" enctype="multipart/form-data">
+            <form method="post" enctype="multipart/form-data">
                 <div id="newPostForm">
                     <label for="username" class="usernameInputLabel">Username: </label>
                     <input type="text" class="usernameInput" id="username" name="username" required="required" maxlength="50" placeholder="Username">
@@ -42,9 +42,9 @@
                     <label for="contentInput" class="contentInputLabel">Content: </label>
                     <textarea name="content" class="contentInput" id="contentInput" required="required" maxlength="2000" placeholder="Content"></textarea>
 
-                    <label for="fileToUpload" class="fileInputLabel">Select an Image: </label>
+                    <label for="fileInput" class="fileInputLabel">Select an Image: </label>
                     <div class="fileInputClass">
-                        <input type="file" class="fileInput" id="fileInput" name="fileToUpload" alt="Image" accept=".jpeg, .png, .jpg, .gif" required="required">
+                        <input type="file" class="fileInput" id="fileInput" name="fileToUpload" accept=".jpeg, .png, .jpg, .gif" required="required">
                     </div>
                     <input type="submit" class="submitPost" name="submit" id="submit" value="POST!">
                 </div>

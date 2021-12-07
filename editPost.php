@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +31,6 @@
         </div>
         <div id="body" class="body">
             <h1>Edit Post</h1>
-            <p class="new">
                 <?php
                 require "fileManager.php";
                 if(isset($_GET['editPost'])
@@ -45,7 +44,7 @@
                     $date = $array[3];
                     $title = $array[5];
                     $content = $array[7];
-                    echo "<form method='post' action='' enctype='multipart/form-data'>
+                    echo "<form method='post' enctype='multipart/form-data'>
                             <div id='newPostForm'>
                                 <label for='username' class='usernameInputLabel'>Username: </label>
                                 <input type='text' name='username' id='username' class='usernameInput' required='required' maxlength='50' value='$username' placeholder='Username'>
@@ -56,8 +55,8 @@
                                 <label for='content' class='contentInputLabel'>Content: </label>
                                 <textarea name='content' class='contentInput' id='content' required='required' maxlength='2000' placeholder='Content'>$content</textarea>
                                 
-                                <label for='existingImage' class='existingImageLabel'>Keep current Image?</label>
-                                <img id='existingImage' alt='Image' class='existingImage' src='$get_imagename'>
+                                <div class='existingImageLabel'>Keep current Image?</div>
+                                <img id='existImage' alt='Image' class='existingImage' src='$get_imagename'>
                             
                                 <label for='fileToUpload' class='fileInputLabel'>Or select a new Image: </label>
                                 <div class='fileInputClass'>
@@ -88,7 +87,6 @@
                     echo "<h1>404</h1>";
                 }
                 ?>
-            </p>
         </div>
 
         <div id="footer" class="footer">
