@@ -35,9 +35,25 @@
             <h2>Latest News: </h2>
             <?php
             require "fileManager.php";
+
+
             for($i=0;$i<folderSize("posts");$i++){
-                echo getPost(filePosition('posts',"$i"));
+                $txt = getPost(filePosition('posts',"$i"));
+                $array = explode("<!---->",$txt);
+                $content = $array[7];
+                $lines = explode(PHP_EOL, $content);
+                $array[7] = "";
+                for($j = 0; $j<count($lines); $j++){
+                    $lines[$j] = $lines[$j] . "<br>";
+                    $array[7] = $array[7] . $lines[$j];
+                }
+                $output = "";
+                for($y = 0;$y<count($array);$y++){
+                    $output = $output . $array[$y];
+                }
+                echo $output;
             }
+
             ?>
         </div>
         <div id="footer" class="footer">

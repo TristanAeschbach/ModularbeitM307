@@ -163,9 +163,9 @@ h1{
     font-size: var(--generalText);
     border: green 1px solid;
     border-radius: var(--borderRadius);
-    align-items: center;
 }
 .fileInput{
+
 }
 .submitPost{
     grid-row: 9;
