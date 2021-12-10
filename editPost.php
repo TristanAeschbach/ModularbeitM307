@@ -32,18 +32,25 @@
         <div id="body" class="body">
             <h1>Edit Post</h1>
                 <?php
+                //verknüpft den fileManager
                 require "fileManager.php";
+                //Setzt den Error Handler fest
+                set_error_handler("errorHandler");
+                //falls die Daten über die Get Methode angegeben wurden, wird der rest ausgeführt, sonst wird wieder auf index.php redirected
                 if(isset($_GET['editPost'])
                 && isset($_GET['editImage'])){
                     $get_filename = $_GET['editPost'];
                     $get_imagename = $_GET['editImage'];
+                    //öffnet die angegebene Datei im read mode und setzt den Inhalt in eine Variabel
                     $editFile = fopen($get_filename,"r");
                     $String = fread($editFile,filesize($get_filename));
+                    //Trennt den Inhalt und setzt die richtigen Werte fest
                     $array = explode("<!---->",$String);
                     $username = $array[1];
                     $date = $array[3];
                     $title = $array[5];
                     $content = $array[7];
+                    //Gibt ein Forum aus mit den Daten aus der Datei als values
                     echo "<form method='post' enctype='multipart/form-data'>
                             <div id='newPostForm'>
                                 <label for='username' class='usernameInputLabel'>Username: </label>
@@ -67,25 +74,36 @@
                                 <input type='submit' class='submitPost' name='submit' id='submit' value='POST!'>
                             </div>
                         </form>";
+                    //falls der Submit Knopf gedrückt wurde...
                     if(isset($_POST["submit"])){
+                        //falls der FileUpload nicht leer ist... sonst
                         if(!empty($_FILES['fileToUpload']['size'])){
+                            //temporärer php Name des Bildes
                             $img_tmp_name = $_FILES['fileToUpload']['tmp_name'];
+                            //Name des Bildes
                             $imgName = $_FILES['fileToUpload']['name'];
+                            //Grösse des Bildes
                             $imgSize = $_FILES['fileToUpload']['size'];
+                            //Autor des Posts
                             $usernameNew = $_POST['username'];
+                            //Titel des Posts
                             $titleNew = $_POST['title'];
+                            //Inhalt des Posts
                             $contentNew = $_POST['content'];
+                            //Funktion zum Erstellen eines editierten Posts mit neuem Bild
                             createEditedPostNewImage("$usernameNew","$titleNew","$contentNew","$img_tmp_name","$imgName","$imgSize","$get_filename", "$get_imagename","$date");
                         }else{
+                            //Autor des Posts
                             $usernameNew = $_POST['username'];
+                            //Titel des Posts
                             $titleNew = $_POST['title'];
+                            //Inhalt des Posts
                             $contentNew = $_POST['content'];
+                            //Funktion zum Erstellen eines editierten Posts ohne neuem Bild
                             createEditedPostSameImage("$usernameNew","$titleNew","$contentNew","$get_filename","$get_imagename","$date");
                         }
                     }
-                }else{
-                    echo "<h1>404</h1>";
-                }
+                }else{redirect("index.php");}
                 ?>
         </div>
 

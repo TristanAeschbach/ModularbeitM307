@@ -34,26 +34,31 @@
             <p></p>
             <h2>Latest News: </h2>
             <?php
+            //verknüpft den fileManager
             require "fileManager.php";
-
-
+            //Setzt den Error Handler fest
+            set_error_handler("errorHandler");
+            //Wird ausgeführt für die grösse des Ordners "posts"
             for($i=0;$i<folderSize("posts");$i++){
+                //führt zwei Holte den Inhalt des Textfiles i im Ordner "posts"
                 $txt = getPost(filePosition('posts',"$i"));
+                //trennt den Inhalt des Textfiles nach festgesetzten Trennzeichen
                 $array = explode("<!---->",$txt);
+                //sucht den content aus
                 $content = $array[7];
+                //trennt den content an jeder neuen Zeile
                 $lines = explode(PHP_EOL, $content);
                 $array[7] = "";
+                //Am ende jeder Zeile wird ein line break hinzugefügt
                 for($j = 0; $j<count($lines); $j++){
                     $lines[$j] = $lines[$j] . "<br>";
                     $array[7] = $array[7] . $lines[$j];
                 }
-                $output = "";
+                //Das ganze Array ausgeben
                 for($y = 0;$y<count($array);$y++){
-                    $output = $output . $array[$y];
+                    echo $array[$y];
                 }
-                echo $output;
             }
-
             ?>
         </div>
         <div id="footer" class="footer">

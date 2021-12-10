@@ -51,16 +51,27 @@
             </form>
         </div>
         <?php
+        //verknüpft den fileManager
         require "fileManager.php";
-            if(isset($_POST["submit"])){
-                $img_tmp_name = $_FILES['fileToUpload']['tmp_name'];
-                $imgName = $_FILES['fileToUpload']['name'];
-                $imgSize = $_FILES['fileToUpload']['size'];
-                $username = $_POST['username'];
-                $title = $_POST['title'];
-                $content = $_POST['content'];
-                createPost("$username","$title","$content","$img_tmp_name","$imgName","$imgSize");
-            }
+        //Setzt den Error Handler fest
+        set_error_handler("errorHandler");
+        //falls der Submit Knopf gedrückt wurde wird die createPost Funktion ausgeführt mit den Daten aus dem Forum
+        if(isset($_POST["submit"])){
+            //temporärer php Name des Bildes
+            $img_tmp_name = $_FILES['fileToUpload']['tmp_name'];
+            //Name des Bildes
+            $imgName = $_FILES['fileToUpload']['name'];
+            //Grösse des Bildes
+            $imgSize = $_FILES['fileToUpload']['size'];
+            //Autor des Posts
+            $username = $_POST['username'];
+            //Titel des Posts
+            $title = $_POST['title'];
+            //Inhalt des Posts
+            $content = $_POST['content'];
+            //Funktion zum erstellen eines Posts
+            createPost("$username","$title","$content","$img_tmp_name","$imgName","$imgSize");
+        }
         ?>
     </div>
 </body>

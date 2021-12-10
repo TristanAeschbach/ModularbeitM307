@@ -1,4 +1,8 @@
 <?php
+set_error_handler("errorHandler");
+function errorHandler($errno, $errstr){
+    echo "<br>Sorry, there's been an Error.<br>Error: [$errno] $errstr";
+}
 //This is the Text, that will be displayed in The Post
 function text($username,$date,$title,$content,$imagename,$filename){
     return "<div class='postContent'>
@@ -32,35 +36,34 @@ function createPost($usernameSource, $titleSource, $contentSource, $tmp_name, $i
     //variable for new Image path
     $imagename = $target_dir.$dateFileName.".".$imageFileType;
     //checks if Username exists, isn't empty and is less than 50 characters long
-    if (isset($usernameSource)
-    && !empty(trim($usernameSource))
-    && strlen(trim($usernameSource)) < 51
+    if (isset($usernameSource)){
+    if (!empty(trim($usernameSource))){
+    if (strlen(trim($usernameSource)) < 51){
     //checks if title exists, isn't empty and is less than 80 characters long
-    && isset($titleSource)
-    && !empty(trim($titleSource))
-    && strlen(trim($titleSource)) < 81
+    if (isset($titleSource)){
+    if (!empty(trim($titleSource))){
+    if (strlen(trim($titleSource)) < 81){
     //checks if Content exists, isn't empty and is less than 2000 characters long
-    && isset($contentSource)
-    && !empty(trim($contentSource))
-    && strlen(trim($contentSource)) < 2001
+    if (isset($contentSource)){
+    if (!empty(trim($contentSource))){
+    if (strlen(trim($contentSource)) < 2001){
     // checks if image exists
-    && isset($imgName)
+    if (isset($imgName)){
     // checks if image is an actual Image
-    && getimagesize($tmp_name) != false
-    // checks if the image file arleady exists
-    && file_exists($imagename) == false
-
-    && file_exists($dateFileName) == false
+    if (getimagesize($tmp_name) != false){
+    // checks if the image and file already exist
+    if (file_exists($imagename) == false){
+    if (file_exists($dateFileName) == false) {
     // checks if the image smaller than 500kb
-    && $imgSize < 500000){
-    // only if all of this is correct, the image and file get created
+    if ($imgSize < 500000) {
+        // only if all of this is correct, the image and file get created
         //Variable uploadOK shouldn't change, unless there is a problem.
         $uploadOk = 1;
         // Allows certain file formats
         if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
             && $imageFileType != "gif") {
             $uploadOk = 0;
-            echo "Fehler File type";
+            echo "</br>You can only Upload .jpg, .jpeg, .png and .gif Files.";
         }
         // Check if $uploadOk is set to 0 by an error
         if ($uploadOk == 0) {
@@ -75,34 +78,47 @@ function createPost($usernameSource, $titleSource, $contentSource, $tmp_name, $i
         $title = htmlspecialchars(trim($titleSource));
         //content entschärfen
         $content = htmlspecialchars(trim($contentSource));
-        $filename = 'posts/'.$dateFileName.'.txt';
+        $filename = 'posts/' . $dateFileName . '.txt';
         //create new File in dorectory posts with file name $date and Suffix .txt, in mode write
         $newFile = fopen($filename, "w");
         //writing the previous variable into the .txt file
-        fwrite($newFile, text($username,$date,$title,$content,$imagename,$filename));
+        fwrite($newFile, text($username, $date, $title, $content, $imagename, $filename));
         //closing the new File after writing the Post
         fclose($newFile);
         //redirects to index.php automatically
         redirect("index.php");
-    }
-    else {echo "<h6>Sorry, something went wrong. Please Try again</h6>";}
+    //Error Handling
+    }else {echo "</br>Sorry, Image Size is over 500kb.";}
+    }else{echo "</br>Error, please retry in a second.";}
+    }else{echo "</br>Error, please retry in a second.";}
+    }else{echo "</br>No Image was set.";}
+    }else{echo "</br>No Image was set.";}
+    }else{echo "</br>Content cannot be longer than 2000 Characters.";}
+    }else{echo "</br>Content cannot be Empty.";}
+    }else{echo "</br>No Content was set.";}
+    }else{echo "</br>Title cannot be longer than 80 Characters";}
+    }else{echo "</br>Title cannot be empty.";}
+    }else{echo "</br>No Title was set.";}
+    }else{echo "</br>Username cannot be longer than 50 Characters.";}
+    }else{echo "</br>Username cannot be empty.";}
+    }else{echo "</br>No username was set.";}
 }
 
 function createEditedPostSameImage($usernameSource, $titleSource, $contentSource, $filename, $imagename, $date){
     //checks if Username exists, isn't empty and is less than 50 characters long
-    if (isset($usernameSource)
-    && !empty(trim($usernameSource))
-    && strlen(trim($usernameSource)) < 51
+    if (isset($usernameSource)){
+    if (!empty(trim($usernameSource))){
+    if (strlen(trim($usernameSource)) < 51){
     //checks if title exists, isn't empty and is less than 80 characters long
-    && isset($titleSource)
-    && !empty(trim($titleSource))
-    && strlen(trim($titleSource)) < 81
+    if (isset($titleSource)){
+    if (!empty(trim($titleSource))){
+    if (strlen(trim($titleSource)) < 81){
     //checks if Content exists, isn't empty and is less than 2000 characters long
-    && isset($contentSource)
-    && !empty(trim($contentSource))
-    && strlen(trim($contentSource)) < 2001
-    && file_exists($filename)
-    && file_exists($imagename)){
+    if (isset($contentSource)){
+    if (!empty(trim($contentSource))){
+    if (strlen(trim($contentSource)) < 2001){
+    if (file_exists($filename)){
+    if (file_exists($imagename)){
         // only if all of this is correct, the image and file get created
         //username entschärfen
         $username = htmlspecialchars(trim($usernameSource));
@@ -113,13 +129,23 @@ function createEditedPostSameImage($usernameSource, $titleSource, $contentSource
         //create new File in directory posts with file name $date and Suffix .txt, in mode write
         $newFile = fopen($filename, "w");
         //writing the previous variable into the .txt file
-        fwrite($newFile, text($username,$date,$title,$content,$imagename,$filename));
+        fwrite($newFile, text($username, $date, $title, $content, $imagename, $filename));
         //closing the new File after writing the Post
         fclose($newFile);
         //redirects to index.php automatically
         redirect("index.php");
-    }
-    else {echo "<h6>Sorry, something went wrong. Please Try again</h6>";}
+    //Error Handling
+    }else{echo "</br>Error, please retry in a second.";}
+    }else{echo "</br>Error, please retry in a second.";}
+    }else{echo "</br>Content cannot be longer than 2000 Characters.";}
+    }else{echo "</br>Content cannot be Empty.";}
+    }else{echo "</br>No Content was set.";}
+    }else{echo "</br>Title cannot be longer than 80 Characters.";}
+    }else{echo "</br>Title cannot be empty.";}
+    }else{echo "</br>No Title was set.";}
+    }else{echo "</br>Username cannot be longer than 50 Characters.";}
+    }else{echo "</br>Username cannot be empty.";}
+    }else{echo "</br>No username was set.";}
 }
 function createEditedPostNewImage($usernameSource, $titleSource, $contentSource, $tmp_name, $imgName, $imgSize, $filename, $imagename, $date){
     //variable for old image name
@@ -127,24 +153,25 @@ function createEditedPostNewImage($usernameSource, $titleSource, $contentSource,
     //retrieves the Suffix of the Image
     $imageFileType = strtolower(pathinfo($target_file_name, PATHINFO_EXTENSION));
     //checks if Username exists, isn't empty and is less than 50 characters long
-    if (isset($usernameSource)
-    && !empty(trim($usernameSource))
-    && strlen(trim($usernameSource)) < 51
+    if (isset($usernameSource)){
+    if (!empty(trim($usernameSource))){
+    if (strlen(trim($usernameSource)) < 51){
     //checks if title exists, isn't empty and is less than 80 characters long
-    && isset($titleSource)
-    && !empty(trim($titleSource))
-    && strlen(trim($titleSource)) < 81
+    if (isset($titleSource)){
+    if (!empty(trim($titleSource))){
+    if (strlen(trim($titleSource)) < 81){
     //checks if Content exists, isn't empty and is less than 2000 characters long
-    && isset($contentSource)
-    && !empty(trim($contentSource))
-    && strlen(trim($contentSource)) < 2001
+    if (isset($contentSource)){
+    if (!empty(trim($contentSource))){
+    if (strlen(trim($contentSource)) < 2001){
     // checks if image exists
-    && isset($imgName)
+    if (isset($imgName)){
     // checks if image is an actual Image
-    && getimagesize($tmp_name) != false
+    if (getimagesize($tmp_name) != false){
     // checks if the image smaller than 500kb
-    && $imgSize < 500000
-    && file_exists($filename)){
+    if ($imgSize < 500000){
+    if (file_exists($filename)){
+    if (file_exists($imagename)){
         // only if all of this is correct, the image and file get created
         //Variable uploadOK shouldn't change, unless there is a problem.
         $uploadOk = 1;
@@ -152,7 +179,7 @@ function createEditedPostNewImage($usernameSource, $titleSource, $contentSource,
         if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
             && $imageFileType != "gif") {
             $uploadOk = 0;
-            echo "Fehler File type";
+            echo "</br>You can only Upload .jpg, .jpeg, .png and .gif Files.";
         }
         // Check if $uploadOk is set to 0 by an error
         if ($uploadOk == 0) {
@@ -175,8 +202,21 @@ function createEditedPostNewImage($usernameSource, $titleSource, $contentSource,
         fclose($newFile);
         //redirects to index.php automatically
         redirect("index.php");
-    }
-    else {echo "<h6>Sorry, something went wrong. Please Try again</h6>";}
+    //Error Handling
+    }else{echo "</br>Error, please retry in a second.";}
+    }else{echo "</br>Error, please retry in a second.";}
+    }else{echo "</br>Sorry, Image Size is over 500kb.";}
+    }else{echo "</br>No Image was set.";}
+    }else{echo "</br>No Image was set.";}
+    }else{echo "</br>Content cannot be longer than 2000 Characters.";}
+    }else{echo "</br>Content cannot be Empty.";}
+    }else{echo "</br>No Content was set.";}
+    }else{echo "</br>Title cannot be longer than 80 Characters.";}
+    }else{echo "</br>Title cannot be empty.";}
+    }else{echo "</br>No Title was set.";}
+    }else{echo "</br>Username cannot be longer than 50 Characters.";}
+    }else{echo "</br>Username cannot be empty.";}
+    }else{echo "</br>No username was set.";}
 }
 //Function to retrieve a textfiles content
 function getPost($filename){
@@ -190,9 +230,11 @@ function getPost($filename){
 }
 //Function to delete a post
 if(isset($_GET['deletePost'])
-&& isset($_GET['deleteImage'])){
-    deletePost($_GET['deletePost'],$_GET['deleteImage']);
-}
+&& isset($_GET['deleteImage'])
+&& file_exists('posts/'.basename($_GET['deletePost']))
+&& file_exists('imgs/'.basename($_GET['deleteImage']))){
+        deletePost($_GET['deletePost'],$_GET['deleteImage']);
+}else{redirect("index.php");}
 function deletePost($filename,$imagename){
     unlink($filename);
     unlink($imagename);
