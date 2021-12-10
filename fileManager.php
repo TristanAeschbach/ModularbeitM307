@@ -1,4 +1,5 @@
 <?php
+//This is the Text, that will be displayed in The Post
 function text($username,$date,$title,$content,$imagename,$filename){
     return "<div class='postContent'>
                 <div class='postHeader'>
