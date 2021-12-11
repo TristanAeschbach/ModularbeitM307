@@ -23,7 +23,8 @@
                                                                 C441.339,189.487,459.308,207.471,459.319,229.668z"/>
                                                         </g>
                                                     </svg>
-                                                <div id="NewPostText">New Post</div></a>
+                    <div id="NewPostText">New Post</div>
+                </a>
             </div>
             <div id="right">
                 <a id="impressum" href="impressum.php">Impressum</a>
