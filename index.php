@@ -49,7 +49,7 @@
                 //trennt den content an jeder neuen Zeile
                 $lines = explode(PHP_EOL, $content);
                 $array[7] = "";
-                //Am ende jeder Zeile wird ein line break hinzugefügt
+                //Am Ende jeder Zeile wird ein line break hinzugefügt
                 for($j = 0; $j<count($lines); $j++){
                     $lines[$j] = $lines[$j] . "<br>";
                     $array[7] = $array[7] . $lines[$j];

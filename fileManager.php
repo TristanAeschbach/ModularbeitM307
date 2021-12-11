@@ -234,7 +234,7 @@ if(isset($_GET['deletePost'])
 && file_exists('posts/'.basename($_GET['deletePost']))
 && file_exists('imgs/'.basename($_GET['deleteImage']))){
         deletePost($_GET['deletePost'],$_GET['deleteImage']);
-}else{redirect("index.php");}
+}
 function deletePost($filename,$imagename){
     unlink($filename);
     unlink($imagename);
